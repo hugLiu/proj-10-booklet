@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link type="text/css" href="../../css/style.css" rel="stylesheet">
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+
+    <!-- add js -->
+    <script src="../../js/jquery.js"></script>
+    <!--<script src="../../js/turn.js"></script>              -->
+    <!--<script src="../../js/jquery.fullscreen.js"></script>-->
+    <!--<script src="../../js/jquery.address-1.6.min.js"></script>-->
+    <!--<script src="../../js/onload.js"></script>-->
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow:auto !important;
+        }
+        p{
+            color: #4e4e4e;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<!--<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">	-->
+<div style="width:100%; text-align:center" >
+    <!--<h2 style="margin-top:0px;margin-bottom:0px;text-shadow: 5px 5px 5px gray">百口泉油田综合开发曲线</h2>-->
+    <a href="javascript:;"><img class="img1" src="images/figure5.png" style="float:left; width:500px;margin:5px;" /></a>
+    <br/><br/>
+    <p style="text-align:left">
+        截止2014年底，全油田共有油井31200口，单井日产油1.53吨，综合含水80.7%，采出程度19.7%，采油速度0.70%。其中稀油采油井数11472口，单井日产油2.19吨，综合含水74.5%，采出程度18.7%，采油速度0.48%，注采比1.09；稠油采油井数19728口，单井日产油1.12吨，综合含水86.2%，采出程度23.9%，采油速度1.55%，油汽比0.136。
+
+    </p>
+</div>
+
+<div style="clear:both"></div>
+
+<div style="width:100%; text-align:center" >
+    <a href="javascript:;"><img class="img2" src="images/figure6.png" style="float:right; height:260px;margin-top:-10px; margin-left:25px;width: 600px;" /></a>>
+    <!--<h2 style="margin-top:0px;margin-bottom:0px;text-shadow: 5px 5px 5px gray">百口泉油田含水与采出程度关系曲线</h2>-->
+    <p style="text-align:left">
+        新疆油田稀油动用石油地质储量13.55亿吨，其中水驱开发动用地质储量11.47亿吨，占84.6%，年产油572.1万吨，占84.3%，可采采出程度72.3%，含水率76.0%。
+
+    </p>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.img1').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/default/images/figure5.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+        $('.img2').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/default/images/figure6.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+
+    })
+</script>

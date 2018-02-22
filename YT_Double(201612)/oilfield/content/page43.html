@@ -1,0 +1,76 @@
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link type="text/css" href="../../css/style.css" rel="stylesheet">
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+
+    <!-- add js -->
+    <script src="../../js/jquery.js"></script>
+    <!--<script src="../../js/turn.js"></script>              -->
+    <!--<script src="../../js/jquery.fullscreen.js"></script>-->
+    <!--<script src="../../js/jquery.address-1.6.min.js"></script>-->
+    <!--<script src="../../js/onload.js"></script>-->
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow:auto !important;
+        }
+        p{
+            color: #4e4e4e;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<!--<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">	-->
+<div style="width:100%; text-align:center" >
+    <h2 style="margin-top:0px;margin-bottom:0px;text-shadow: 5px 5px 5px gray">百口泉油田综合开发曲线</h2>
+    <a href="javascript:;"><img class="img1" src="images1/figure8.png" style="float:left; width:500px;margin:5px;" /></a>
+    <p style="text-align:left">
+        束缚水饱和度较大，亲水，束缚水饱和度与残余油饱和度覆盖范围较窄，连通性差、驱油效率差
+    </p>
+</div>
+
+<div style="clear:both"></div>
+
+<div style="width:100%; text-align:center" >
+    <a href="javascript:;"><img class="img2" src="images1/figure9.png" style="float:right; height:260px;margin-top:-10px; margin-left:25px;width: 600px;" /></a>>
+    <!--<h2 style="margin-top:0px;margin-bottom:0px;text-shadow: 5px 5px 5px gray">百口泉油田含水与采出程度关系曲线</h2>-->
+    <p style="text-align:left">
+        压汞资料表明，K1q11-2储层饱和度中值压力为0.07～3.31MPa，平均为1.39MPa；饱和度中值半径为0.22～10.46μm，平均为2.19μm；排驱压力为0.01～0.31MPa，平均为0.09MPa；最大孔喉半径为2.38～87.21μm，平均为18.89μm；平均毛管半径为0.90～21.09μm，平均为5.95μm；非饱和孔隙体积百分数为6.27%～36.44%，平均为20.07%。由K1q11-2段油层J函数曲线和平均毛管压力曲线确定饱和度中值压力0.802MPa，饱和度中值半径0.945μm，排驱压力0.07MPa，最大孔喉半径10.83μm，平均毛管半径4.61μm，非饱和孔隙体积百分数19.8%，平均退汞效率为21.8%。
+    </p>
+</div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.img1').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/content/images1/figure8.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+        $('.img2').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/content/images1/figure9.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+
+    })
+</script>

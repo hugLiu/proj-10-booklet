@@ -1,0 +1,89 @@
+<html>
+<head>
+
+    <!-- content type -->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+       
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+                
+    <!-- add css -->
+    <link type="text/css" href="../../plugins/jquery.easyListSplitter/style.css" rel="stylesheet">
+
+    
+    <!-- add js -->
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../plugins/jquery.easyListSplitter/jquery.easyListSplitter.js"></script>
+    
+
+	<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+		overflow:auto !important;
+    }
+    </style> 
+      
+</head>
+ 
+<!--<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">-->
+    <div class="sample">
+        <h1 style="text-align:center;text-shadow: 5px 5px 5px gray;">油藏目录</h1>
+        <ul id="rescatalog">
+            <li><a href="javascript:;">1.百重7井区块(J1b)</a></li>
+<li><a href="javascript:;">2.百21井区块(T3b)</a></li>
+<li><a href="javascript:;">3.百21井区块(T3b22)</a></li>
+<li><a href="javascript:;">4.百21井区块(T2k2)</a></li>
+<li><a href="javascript:;">5.百42井区块(T2k2)</a></li>
+<li><a href="javascript:;">6.422井区块(T2k2)</a></li>
+<li><a href="javascript:;">7.检188断块(T2k2)</a></li>
+<li><a href="javascript:;">8.百54井区块(T2k2)</a></li>
+<li><a href="javascript:;">9.百重7井区块(T2k2)</a></li>
+<li><a href="javascript:;">10.百113井区块(T2k2)</a></li>
+<li><a href="javascript:;">11.百21井区块(T2k1)</a></li>
+<li><a href="javascript:;">12.百54井区块(T2k1)</a></li>
+<li><a class="active" href="javascript:setPage(12)">13.百21井区块(T1b)</a></li>
+<li><a href="javascript:;">14.百31井区块(T1b)</a></li>
+<li><a href="javascript:;">15.百113井区块(T1b3)</a></li>
+<li><a href="javascript:;">16.百202井区块(T1b2)</a></li>
+<li><a href="javascript:;">17.百202井区块(T1b1)</a></li>
+<li><a href="javascript:;">18.检188断块(P2w)</a></li>
+<li><a href="javascript:;">19.百1井区块(P2w)</a></li>
+<li><a href="javascript:;">20.百31井区块(P1j)</a></li>
+<li><a href="javascript:;">21.百乌28井断块(P1j11)</a></li>
+<li><a href="javascript:;">22.百乌28井断块(P1j12)</a></li>
+<li><a href="javascript:;">23.检188西断块(C)</a></li>
+<li><a href="javascript:;">24.检188东断块(C)</a></li>
+<li><a href="javascript:;">25.古53井断块(C)</a></li>
+<li><a href="javascript:;">26.百503井断块(C)</a></li>
+<li><a href="javascript:;">27.百512井断块(C)</a></li>
+<li><a href="javascript:;">&nbsp;</a></li>
+<li><a href="javascript:;">&nbsp;</a></li>
+<li><a href="javascript:;">&nbsp;</a></li>
+<li><a href="javascript:;">28.百31井区块(T2k2)</a></li>
+<li><a href="javascript:;">29.百34井区块(T2k2)</a></li>
+<li><a href="javascript:;">30.百31井区块(T2k1)</a></li>
+<li><a href="javascript:;">31.百34井区块(T2k1)</a></li>
+<li><a href="javascript:;">32.百31井区块(T1b3)</a></li>
+<li><a href="javascript:;">33.百21井区块(P2x)</a></li>
+<li><a href="javascript:;">34.百111井断块(P1j11)</a></li>
+<li><a href="javascript:;">35.百乌21井断块(P1j11)</a></li>
+<li><a href="javascript:;">36.百乌21井断块(P1j12)</a></li>
+<li><a href="javascript:;">37.百112井断块(P1j11)</a></li>
+
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            
+            $('#rescatalog').easyListSplitter({ 
+                colNumber: 4 // Insert here the number of columns you want. Consider that the plugin will create the number of cols requested only if there are enough items in the list.
+            });
+        });
+    </script>
+</body>
+</html>

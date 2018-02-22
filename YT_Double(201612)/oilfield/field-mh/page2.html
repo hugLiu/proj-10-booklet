@@ -1,0 +1,64 @@
+<html>
+<head>
+
+    <!-- content type -->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+       
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+                
+    <!-- add css -->
+    <link type="text/css" href="../../css/style.css" rel="stylesheet">
+	<!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+    
+    <!-- add js -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/turn.js"></script>              
+    <script src="../../js/jquery.fullscreen.js"></script>
+    <script src="../../js/jquery.address-1.6.min.js"></script>
+	<!--<script src="../../js/onload.js"></script>-->
+    
+
+	<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+		overflow:auto !important;
+    }
+    p{
+        color: #4e4e4e;
+        font-weight: 800;
+    }
+    </style> 
+      
+</head>
+ 
+<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">
+<a href="javascript:;"><img src="figure2.png" style="float:right; width:360px;margin:10px" /></a>
+    <h1 style="text-shadow: 5px 5px 5px gray">(三)综合柱状图</h1>
+	<p style="text-indent: 2em">根据油气地化分析，玛河气田天然气烃源岩为中下侏罗统。玛纳斯背斜南北边界断裂断至深部地层，可起到沟通侏罗系烃源岩的作用，油气沿断裂向上运移至玛纳斯背斜聚集成藏。</p>
+	<p style="text-indent: 2em">根据钻井资料，玛纳斯背斜自上而下钻遇的地层有新近系塔西河组（N1t）、沙湾组(N1s)，古近系安集海河组(E2-3a)、紫泥泉子组(E1-2z)，白垩系东沟组（K2d）和吐谷鲁群(K1tg)。其中安集海河组(E2-3a)异常高压厚层泥岩为玛河气田紫泥泉子组气藏的区域性盖层。</p>
+
+    <h1 style="text-shadow: 5px 5px 5px gray">(四)沉积相图</h1>
+	<p style="text-indent: 2em">
+        <a href="javascript:;"><img src="figure2-1.png" style="width:400px;margin:10px" /></a><br/>
+        图注：①玛纳斯背斜整体处于山前沉积坡折带，紫泥泉子组三段（E1-2z3）为辫状河三角洲平原沉积；②砂体厚度约20~40m；②物源来自于南部天山。
+    </p>
+</body>
+</html>
+<script>
+    $(function(){
+        $('img').on('click', function () {
+            var src = this.src;
+            console.log(src);
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', src);
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+    })
+</script>

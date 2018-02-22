@@ -1,0 +1,103 @@
+<html>
+<head>
+
+    <!-- content type -->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+       
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+                
+    <!-- add css -->
+    <link type="text/css" href="../../../css/style.css" rel="stylesheet">
+	<!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+    
+    <!-- add js -->
+    <script src="../../../js/jquery.js"></script>
+    <!--<script src="../../../js/turn.js"></script>              -->
+    <!--<script src="../../../js/jquery.fullscreen.js"></script>-->
+    <!--<script src="../../../js/jquery.address-1.6.min.js"></script>-->
+	<!--<script src="../../../js/onload.js"></script>-->
+    
+
+	<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+		overflow:auto !important;
+    }
+    p{
+        color: #4e4e4e;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .p2-1{
+        display: none;
+    }
+    .color1 {
+        color: #767676;
+    }
+
+    .color2 {
+        color: #9d9d9d;
+    }
+
+    .color3 {
+        color: #bfbfbf;
+    }
+
+    .color4 {
+        color: #e4e4e4;
+    }
+    </style> 
+      
+</head>
+ 
+<!--<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">-->
+    <div style="width:49%; float:left; margin:5px; text-align:center" >
+    <h3 style="text-shadow: 5px 5px 5px gray">相渗曲线</h3>
+        <a href="javascript:;"><img class="img1" src="figure9.png" style="width:400px;margin:5px" /></a>
+    <p style="text-indent: 2em"  class="p2-1">百21井区百口泉组油藏两相共渗区域小，油层见水后，随着含水饱和度的上升，含水上升很快，油相渗透率急剧下降，造成油层渗流阻力增加，产油量递减快。以百口泉组水驱油实验测算，当注入孔隙体积倍数为1.5时，采收率为29%，当注入倍数为2时，采收率为32%。从含水与采收率关系曲线可见，在50%的含水以前只能采出10%～12%的原油，绝大部分油是在含水50%以后的高含水期采出的。
+    </p>
+        <p style="text-indent: 2em;text-align: left;"  class="p2-2">百21井区百口泉组油藏两相共渗区域小，油层见水后，随着含水饱和度的上升，含水上升很快，<span class="color1">油相渗透率急剧下降，造成油层渗流阻力增加，产</span><span class="color2">油量递减快。以百口泉组水</span><span class="color3">驱油实验测算，当注入孔</span><span class="color4">隙体积倍...</span>
+        </p>
+    </div>
+	
+    <div style="width:49%; float:left; margin:0px;" >
+    <h3 style="text-shadow: 5px 5px 5px gray">毛管压力曲线</h3>
+	<p style="text-indent: 2em">
+        当累积渗透率达到99.99%时，含油饱和度为52.11%，对应的孔吼半径下限为0.03μm，由此得出储层孔隙度下限为9.25%，渗透率下限为0.16mD。
+    </p>
+
+        <a href="javascript:;"><img class="img2" src="figure10.png" style="width:420px;margin:5 5 5 5" /></a>
+    </div>
+    <div style="clear:both"></div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.img1').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/reservoir/item13/figure9.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+        $('.img2').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/reservoir/item13/figure10.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+        $('.p2-2').click(function(){
+            $('.p2-2').css('display','none');
+            $('.p2-1').css('display','block');
+        })
+        $('.p2-1').click(function(){
+            $('.p2-1').css('display','none');
+            $('.p2-2').css('display','block');
+        })
+
+    })
+</script>

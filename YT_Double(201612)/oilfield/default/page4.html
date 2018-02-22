@@ -1,0 +1,59 @@
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link type="text/css" href="../../css/style.css" rel="stylesheet">
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+
+    <!-- add js -->
+    <script src="../../js/jquery.js"></script>
+    <!--<script src="../../js/turn.js"></script>              -->
+    <!--<script src="../../js/jquery.fullscreen.js"></script>-->
+    <!--<script src="../../js/jquery.address-1.6.min.js"></script>-->
+    <!--<script src="../../js/onload.js"></script>-->
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            /*overflow:auto !important;*/
+            overflow: hidden;
+        }
+        p{
+            color: #4e4e4e;
+            font-weight: 400;
+            line-height: 19px;
+        }
+
+    </style>
+
+</head>
+
+<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">
+<!--<h1 style="text-shadow: 5px 5px 5px gray;text-align: center">1980年-2016年开发数据表</h1>-->
+<p style="text-indent: 0em">
+    <a href="javascript:;"><img src="2012yqtfbt.jpg" style="width:870px;margin:0px" /></a>
+</p>
+</body>
+</html>
+<script>
+    $(function(){
+        $('img').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/default/2012yqtfbt.jpg');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+    })
+</script>

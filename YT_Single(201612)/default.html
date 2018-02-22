@@ -1,0 +1,1126 @@
+
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+
+    <!-- add js -->
+    <script src="js/jquery.js"></script>
+    <script src="js/turn.js"></script>
+    <script src="js/jquery.fullscreen.js"></script>
+    <script src="js/jquery.address-1.6.min.js"></script>
+    <script>
+        var tb=function(page){
+            if(page){
+                $('#dy li').each(function(){
+                    if($(this).attr('dyid')==page){
+                        $('#magazine').turn('page',$(this).text())
+
+                    }
+                })
+            }else{
+                $('#dy li').each(function(){
+                    if($(this).attr('dyid')==$('#fb7-book').turn('page')){
+                        $('#magazine').turn('page',$(this).text())
+
+                    }
+                })
+            }
+
+        }
+        var tb1=function(page){
+            if(page){
+                $('#dy li').each(function(){
+                    if($(this).text()==page){
+                        $('#fb7-book').turn('page',$(this).attr('dyid'))
+                    }
+                })
+            }else{
+                $('#dy li').each(function(){
+                    if($(this).text()==$('#magazine').turn('page')){
+                        $('#fb7-book').turn('page',$(this).attr('dyid'))
+                    }
+                })
+            }
+
+        }
+    </script>
+    <script src="js/onload.js"></script>
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: auto !important;
+        }
+        /*#fb7-container-book{*/
+            /*display: none !important;*/
+        /*}*/
+
+
+        #magazine{
+            display: none;
+            width:70%;
+            height:80%;
+            position: absolute !important;
+            left:15%;
+            /*top: 100px;*/
+            top: 5%;
+        }
+        #magazine .turn-page{
+            background-color: #ffffff;
+            background-size:100% 100%;
+
+        }
+        /*.fb7-nav-arrow{*/
+            /*display: block !important;*/
+        /*}*/
+        .dyjt{
+            position: absolute; top: 50%; z-index: 15;
+            background: url(images/icons.png) no-repeat !important;
+            width: 158px;
+            height: 100px;
+            margin-top: -50px;
+            cursor:pointer;
+
+
+
+        }
+        .topjt{
+            right: 0px;
+            background-position: -174px -205px !important;
+            transform-origin:right center;
+            -ms-transform-origin:right center;
+            -webkit-transform-origin:right center;
+        }
+        .topjt:hover{
+            background-position: -174px -315px !important;
+        }
+        .bottomjt{
+            background-position: 0px -205px !important;
+            display: none;
+            transform-origin:0 center;
+            -ms-transform-origin:0 center;
+            -webkit-transform-origin:0 center;
+        }
+        .bottomjt:hover{
+            background-position: 0px -315px !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- BEGIN FLIPBOOK STRUCTURE -->
+<div data-template="true" data-cat="book7" id="fb7-ajax">
+
+
+
+    <!-- BEGIN HTML BOOK -->
+    <div data-current="book7" class="fb7" id="fb7">
+
+        <!-- preloader -->
+        <div class="fb7-preloader">
+            <div id="wBall_1" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_2" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_3" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_4" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+            <div id="wBall_5" class="wBall">
+                <div class="wInnerBall">
+                </div>
+            </div>
+        </div>
+
+        <!-- background for book -->
+        <div class="fb7-bcg-book"></div>
+
+
+
+
+        <!--**********************单页面箭头-->
+        <div id='dym' style="display: none">
+            <a class="dyjt topjt" ></a>
+            <a class="dyjt bottomjt" ></a>
+        </div>
+        <!--**********************单页面箭头-->
+
+
+
+
+
+
+
+        <div id="magazine">
+
+            <!--******************************************page1-7 strat-->
+            <div style="background-image:url(images/index.jpg);" pageid='1'></div>
+            <div pageid='2'>
+                <iframe  width="100%" height="100%" src="oilfield/tableofcontents/style1/default.html" frameborder="0" data-id="home"
+                        seamless style="display: inline;"></iframe>
+
+            </div>
+            <div style="background-image:url(oilfield/field1/cover.jpg)"></div>
+            <div  style="background-image:url(oilfield/field4/cover.jpg)"></div>
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/field4/page1.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/field4/page2.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/field4/page3.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+            <!--******************************************page1-7 end-->
+            <!--******************************************page8-14 strat-->
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/field4/page4.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/reservoir/catalog.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+
+
+            <div style="background-image:url(oilfield/reservoir/cover.jpg)">
+
+            </div>
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/reservoir/item13/page1.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/reservoir/item13/page2.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/reservoir/item13/page3.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/reservoir/item13/page4.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+            <!--******************************************page8-14 end-->
+            <div>
+                <iframe  width="100%" height="100%" src="oilfield/reservoir/item13/page5.html" frameborder="0" data-id="home"
+                         seamless style="display: inline;"></iframe>
+            </div>
+            <div>
+                <div style="text-align:center">
+                    <img src="images/end.jpg" style="width:700px">
+
+                    <p></p>
+                    <h5 style="text-align: center">&nbsp;制作单位：新疆油田分公司勘探开发研究院规划所 &
+                        侏罗纪软件新疆分公司</h5>
+                </div>
+            </div>
+
+        </div>
+        <!--对应页码转换-->
+        <!--dyid为双页面   text为单页面-->
+        <ul style="display: none" id='dy'>
+            <li dyid='1'>1</li>
+
+            <li dyid='2'>2</li>
+            <li dyid='3'>3</li>
+
+            <li dyid='4'>4</li>
+            <li dyid='5'>4</li>
+
+            <li dyid='6'>5</li>
+            <li dyid='7'>6</li>
+
+            <li dyid='8'>7</li>
+            <li dyid='9'>8</li>
+
+            <li dyid='10'>9</li>
+            <li dyid='11'>10</li>
+
+            <li dyid='12'>11</li>
+            <li dyid='13'>12</li>
+
+            <li dyid='14'>13</li>
+            <li dyid='15'>14</li>
+
+            <li dyid='16'>15</li>
+            <li dyid='17'>15</li>
+
+            <li dyid='18'>16</li>
+        </ul>
+
+
+
+
+
+
+
+        <!-- BEGIN CONTAINER BOOK -->
+        <div id="fb7-container-book">
+
+            <!-- BEGIN deep linking -->
+            <section id="fb7-deeplinking">
+                <ul>
+                    <li data-address="page1" data-page="1"></li>
+                    <li data-address="page2-page3" data-page="2"></li>
+                    <li data-address="page2-page3" data-page="3"></li>
+                    <li data-address="page4-page5" data-page="4"></li>
+                    <li data-address="page4-page5" data-page="5"></li>
+                    <li data-address="page6-page7" data-page="6"></li>
+                    <li data-address="page6-page7" data-page="7"></li>
+                    <li data-address="page8-page9" data-page="8"></li>
+                    <li data-address="page8-page9" data-page="9"></li>
+                    <li data-address="page10-page11" data-page="10"></li>
+                    <li data-address="page10-page11" data-page="11"></li>
+                    <li data-address="page12-page13" data-page="12"></li>
+                    <li data-address="page12-page13" data-page="13"></li>
+                    <li data-address="page14-page15" data-page="14"></li>
+                    <li data-address="page14-page15" data-page="15"></li>
+                    <li data-address="page16-page17" data-page="16"></li>
+                    <li data-address="page16-page17" data-page="17"></li>
+                    <li data-address="end" data-page="18"></li>
+                </ul>
+            </section>
+            <!-- END deep linking -->
+
+
+            <!-- BEGIN ABOUT -->
+            <section id="fb7-about">
+                <h1 style="text-shadow: 5px 5px 5px black"><strong>前言</strong></h1>
+
+                <h1 style="text-shadow: 5px 5px 5px black">新疆油田分公司<strong>开发图册</strong></h1>
+
+                <p style="font-size: 24px;color: #dceaeb;font-weight: bold;text-indent: 2em;text-shadow: 1px 1px 1px black">
+                    新疆油田位于我国西北部新疆维吾尔自治区，准格尔盆地。1955年10月29日，克拉玛依地区1号井喷出高产油气流，发现了克拉玛依油田，是新中国成立后发现的第一个大油田；1960年，克拉玛依油田生产原油164万吨，占全国当年原油产量的40%，成为大庆油田发现前全国量大的石油生产基地。40多年来，以克拉玛依油田为主，相继开发建设了百口泉、夏子街、彩南及石西等32个油气田。</p>
+
+                <div style="text-align: center">
+                    <img src="images/logo-small.png"/>
+
+                    <h1 style="text-align: center; margin-top:15px;text-shadow: 5px 5px 5px black"><strong>新疆油田分公司勘探开发研究院规划所</strong>
+                    </h1>
+
+                    <h3 style="text-align: center;text-shadow: 5px 5px 5px black">2016年12月</h3>
+                </div>
+            </section>
+            <!-- END ABOUT -->
+
+
+            <!-- BEGIN PAGES -->
+            <div id="fb7-book">
+
+
+                <!-- BEGIN PAGE 1 -->
+                <div style="background-image:url(images/index.jpg)" class="fb7-noshadow">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+
+                        </div>
+
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 1 -->
+
+
+                <!-- BEGIN PAGE 2 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page  -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-2-content" width="100%" height="100%" src="" frameborder="0" data-id="home"
+                                    seamless style="display: inline;"></iframe>
+                        </div>
+
+
+                        <!-- begin number page -->
+                        <div class="fb7-meta">
+                            <span class="fb7-num">2</span>
+                        </div>
+                        <!-- end number page -->
+
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 2 -->
+
+
+                <!-- BEGIN PAGE 3 -->
+                <div style="background-image:url(oilfield/field1/cover.jpg)">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page-->
+                        <div class="fb7-page-book">
+
+                        </div>
+
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">3</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 3 -->
+
+                <!-- BEGIN PAGE 4-5 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-4-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">4</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+
+                <div style="background-image:url(oilfield/field4/cover.jpg)">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">5</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 4-5 -->
+
+                <!-- BEGIN PAGE 6 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-6-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">6</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 6 -->
+
+                <!-- BEGIN PAGE 7 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-7-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">7</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 7 -->
+
+                <!-- BEGIN PAGE 8 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-8-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">8</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 8 -->
+
+                <!-- BEGIN PAGE 9 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-9-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">9</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 9 -->
+
+
+                <!-- BEGIN PAGE 10 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-10-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">10</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 10 -->
+
+                <!-- BEGIN PAGE 11 -->
+                <div style="background-image:url(oilfield/reservoir/cover.jpg)">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+
+                        </div>
+
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">11</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 11 -->
+
+
+                <!-- BEGIN PAGE 12 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book" style="top:10px;">
+                            <h2 style="margin-top:0px; margin-bottom:0px;">13 .百21井区块(T1b)</h2>
+                            <hr>
+                            <iframe id="page-12-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">12</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 12 -->
+
+
+                <!-- BEGIN PAGE 13 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <h2 style="margin-top:0px; margin-bottom:0px;">&nbsp;</h2>
+                            <hr>
+                            <iframe id="page-13-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">13</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 13 -->
+
+
+                <!-- BEGIN PAGE 14 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-14-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">14</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 14 -->
+
+
+                <!-- BEGIN PAGE 15 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-15-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">15</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 15 -->
+
+
+                <!-- BEGIN PAGE 16 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-16-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">16</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 16 -->
+
+
+                <!-- BEGIN PAGE 17 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page -->
+                        <div class="fb7-page-book">
+                            <iframe id="page-17-content" class="content-frame" width="100%" height="100%" src=""
+                                    frameborder="0" data-id="home" seamless style="display: inline;"></iframe>
+                        </div>
+
+                        <!-- begin number page  -->
+                        <div class="fb7-meta">
+
+                            <span class="fb7-num">17</span>
+
+                        </div>
+                        <!-- end number page  -->
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 17 -->
+
+                <!-- BEGIN PAGE 18 -->
+                <div style="background-image:url()">
+
+                    <!-- begin container page book -->
+                    <div class="fb7-cont-page-book">
+
+                        <!-- description for page-->
+                        <div class="fb7-page-book">
+                            <div style="text-align:center">
+                                <img src="images/end.jpg" style="width:700px">
+
+                                <p></p>
+                                <h5 style="float:right; padding-right: 50px;">&nbsp;制作单位：新疆油田分公司勘探开发研究院规划所 &
+                                    侏罗纪软件新疆分公司</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end container page book -->
+
+                </div>
+                <!-- END PAGE 18 -->
+
+
+            </div>
+            <!-- END PAGES -->
+
+
+            <!-- arrows -->
+            <a class="fb7-nav-arrow prev"></a>
+            <a class="fb7-nav-arrow next"></a>
+
+            <!-- shadow -->
+            <div class="fb7-shadow"></div>
+
+        </div>
+        <!-- END CONTAINER BOOK -->
+
+        <!-- BEGIN FOOTER -->
+        <div id="fb7-footer">
+
+            <div class="fb7-bcg-tools"></div>
+
+            <div class="fb7-menu" id="fb7-center">
+                <ul>
+
+                    <!-- margin left -->
+                    <li></li>
+
+                    <!-- icon download -->
+                    <!--<li>
+                        <a title="Pdf File Or Zip" class="fb7-download" href="img/file.pdf"></a>
+                    </li>-->
+
+
+                    <!-- icon_zoom_in -->
+                    <li>
+                        <a title="放大" class="fb7-zoom-in"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_out -->
+                    <li>
+                        <a title="缩小" class="fb7-zoom-out"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_auto -->
+                    <li>
+                        <a title="适应屏幕" class="fb7-zoom-auto"></a>
+                    </li>
+
+
+                    <!-- icon_zoom_original -->
+                    <li>
+                        <a title="实际尺寸" class="fb7-zoom-original"></a>
+                    </li>
+
+
+                    <!-- icon_allpages -->
+                    <li>
+                        <a title="图册缩略" class="fb7-show-all"></a>
+                    </li>
+
+
+                    <!-- icon_home -->
+                    <li>
+                        <a title="回到封面" class="fb7-home"></a>
+                    </li>
+
+                    <!-- icon fullscreen -->
+                    <li>
+                        <a title="全屏切换" class="fb7-fullscreen"></a>
+                    </li>
+
+                    <!-- margin right -->
+                    <li></li>
+
+                </ul>
+            </div>
+
+            <div class="fb7-menu" id="fb7-right">
+                <ul>
+                    <!-- icon page manager -->
+                    <li class="fb7-goto">
+                        <label for="fb7-page-number" id="fb7-label-page-number"></label>
+                        <input type="text" id="fb7-page-number">
+                        <button type="button">转到</button>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- END FOOTER -->
+
+        <!-- BEGIN THUMBS -->
+        <div id="fb7-all-pages" class="fb7-overlay">
+
+            <section class="fb7-container-pages">
+
+                <div id="fb7-menu-holder">
+
+                    <ul id="fb7-slider">
+
+
+                        <li class="6">
+                            <img alt="" src="oilfield/field4/figure1.png">
+                        </li>
+
+
+                        <li class="8">
+                            <img alt="" src="oilfield/field4/figure2.png">
+                        </li>
+
+
+                        <li class="8">
+                            <img alt="" src="oilfield/field4/figure3.png">
+                        </li>
+
+
+                        <li class="8">
+                            <img alt="" src="oilfield/field4/figure4.png">
+                        </li>
+
+
+                        <li class="9">
+                            <img alt="" src="oilfield/field4/figure5.png">
+                        </li>
+
+
+                        <li class="9">
+                            <img alt="" src="oilfield/field4/figure6.png">
+                        </li>
+
+
+                        <li class="12">
+                            <img alt="" src="oilfield/reservoir/item13/figure1.png">
+                        </li>
+
+
+
+
+
+                        <li class="13">
+                            <img alt="" src="oilfield/reservoir/item13/figure2.png">
+                        </li>
+
+                        <li class="13">
+                            <img alt="" src="oilfield/reservoir/item13/figure3.png">
+                        </li>
+
+
+                        <li class="13">
+                            <img alt="" src="oilfield/reservoir/item13/figure4.png">
+                        </li>
+
+                        <li class="14">
+                            <img alt="" src="oilfield/reservoir/item13/figure5.png">
+                        </li>
+                        <li class="14">
+                            <img alt="" src="oilfield/reservoir/item13/figure6.png">
+                        </li>
+
+                        <li class="15">
+                            <img alt="" src="oilfield/reservoir/item13/figure7.png">
+                        </li>
+                        <li class="15">
+                            <img alt="" src="oilfield/reservoir/item13/figure8.png">
+                        </li>
+                        <li class="16">
+                            <img alt="" src="oilfield/reservoir/item13/figure9.png">
+                        </li>
+                        <li class="16">
+                            <img alt="" src="oilfield/reservoir/item13/figure10.png">
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!-- END THUMBS -->
+
+    </div>
+    <!-- END HTML BOOK -->
+
+
+</div>
+<!-- END FLIPBOOK STRUCTURE -->
+<div class="hidden-Bigimg">
+    <img src="images/9.jpg" alt=""/>
+</div>
+
+<!-- CONFIGURATION FLIPBOOK -->
+<script>
+    jQuery('#fb7-ajax').data('config', {
+        "page_width": "1000",
+        "page_height": "700",
+        "go_to_page": "Page",
+        "gotopage_width": "45",
+        "zoom_double_click": "1",
+        "zoom_step": "0.06",
+        "tooltip_visible": "true",
+        "toolbar_visible": "true",
+        "deeplinking_enabled": "true",
+        "double_click_enabled": "true",
+        "rtl": "false"
+    });
+
+    //装载油田目录
+    $("#page-2-content").attr("src", "oilfield/tableofcontents/style1/default.html");
+    //装载page 6
+    $("#page-6-content").attr("src", "oilfield/field4/page1.html");
+    //装载page 7
+    $("#page-7-content").attr("src", "oilfield/field4/page2.html");
+    //装载page 8
+    $("#page-8-content").attr("src", "oilfield/field4/page3.html");
+    //装载page 9
+    $("#page-9-content").attr("src", "oilfield/field4/page4.html");
+    //装载page 10
+    $("#page-10-content").attr("src", "oilfield/reservoir/catalog.html");
+    //装载page 12
+    $("#page-12-content").attr("src", "oilfield/reservoir/item13/page1.html");
+    //装载page 13
+    $("#page-13-content").attr("src", "oilfield/reservoir/item13/page2.html");
+    //装载page 14
+    $("#page-14-content").attr("src", "oilfield/reservoir/item13/page3.html");
+    //装载page 15
+    $("#page-15-content").attr("src", "oilfield/reservoir/item13/page4.html");
+    //装载page 16
+    $("#page-16-content").attr("src", "oilfield/reservoir/item13/page5.html");
+
+
+    //点击放大图片消失
+    $('.hidden-Bigimg').on('click', function () {
+        $('.hidden-Bigimg').css('display', 'none')
+    })
+
+
+
+
+
+    $(function () {
+        $('.topjt').click(function(){
+
+            $('#magazine').turn('next');
+
+            if($('#magazine').turn('page')!=$('#dy li:last').text()){
+                $('.bottomjt').css('display','block')
+            }else{
+                $('.topjt').css('display','none')
+
+            }
+        })
+
+
+
+        $('.bottomjt').click(function(){
+
+            $('#magazine').turn('previous');
+
+            if($('#magazine').turn('page')!=1){
+                $('.topjt').css('display','block')
+            }else{
+                $('.bottomjt').css('display','none')
+
+            }
+        })
+    })
+
+
+
+
+
+
+
+
+
+
+
+    //
+    $(window).ready(function() {
+
+
+        $('#magazine').turn({
+            display: 'single',
+            acceleration: true,
+            gradients: !$.isTouch,
+            elevation:50,
+            duration: 1000,
+
+            when: {
+                turned: function(e, page) {
+                    console.log('Current view: ', $(this).turn('view'));
+                }
+            }
+        });
+    });
+
+
+    $(window).bind('keydown', function(e){
+
+        if (e.keyCode==37)
+            $('#magazine').turn('previous');
+        else if (e.keyCode==39)
+            $('#magazine').turn('next');
+
+    });
+</script>
+</body>
+</html>

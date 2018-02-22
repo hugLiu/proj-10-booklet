@@ -1,0 +1,31 @@
+指导意见图册：
+cover.html
+
+		var year = $(this).val();
+                var ip = "http://10.72.16.196";
+                var port = "";
+                if (year == "2017") {
+                    port = "7802";
+                } else if (year == "2016") {
+                    port = "7803";
+                } else  {
+                    port = "7804";
+                }
+                var url = ip + ":" + port;
+                window.top.location=url;
+
+实施成果图册：
+cover.html
+
+                var year = $(this).val();
+                var ip = "http://10.72.16.196";
+                var port = "";
+                if (year == "2016") {
+                    port = "7805";
+                } else if (year == "2015") {
+                    port = "7806";
+                } else  {
+                    port = "7807";
+                }
+                var url = ip + ":" + port;
+                window.top.location=url;

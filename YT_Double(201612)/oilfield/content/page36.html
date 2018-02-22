@@ -1,0 +1,88 @@
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link type="text/css" href="../../../css/style.css" rel="stylesheet">
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+
+    <!-- add js -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../../js/turn.js"></script>
+    <script src="../../../js/jquery.fullscreen.js"></script>
+    <script src="../../../js/jquery.address-1.6.min.js"></script>
+    <script src="../../../js/onload.js"></script>
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow:auto !important;
+        }
+    </style>
+
+</head>
+
+<!--<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">-->
+<div style="width:48%; float:left; margin:5px;" >
+    <img src="images/figure2.png" style="float:left; width:260px;margin:5px;cursor: pointer" id='img1' />
+    <p>
+        石南油田位于准噶尔盆地陆梁隆起西段的夏盐凸起东部，部分处于三南凹陷西斜坡，各油藏区块主要沿基东断裂带呈北东向展布，基东断裂带上倾方向北东与三个泉凸起相接，下倾西南方向伸入具有二叠系烃源岩的盆1井西凹陷。油藏类型主要为单斜背景上的构造岩性油藏和一系列的鼻状构造油藏。石南油田累积探明含油面积147.76km2，探明含气面积28.90km2。
+    </p>
+</div>
+
+<div style="width:48%; float:right; margin:5px;" >
+    <img src="images/figure3.png" style="float:left; width:140px;height:320px;margin:5px;cursor: pointer" id='img2'/>
+    <p>
+        石南地区由新到老依次为新生界第四系、新近系、古近系，中生界白垩系吐谷鲁组，侏罗系头屯河组、西山窑组、三工河组、八道湾组，三叠系白碱滩组、上克拉玛依组、下克拉玛依组、百口泉组，古生界二叠系乌尔河组和佳木河组。
+        石南油田自下而上发育四套储油地层：侏罗系三工河组、西山窑组、头屯河组和白垩系清水河组，一套储气地层：侏罗系三工河组。
+        <!--颗粒以次棱角状为主，半圆状次之，磨圆度较差，分选差，结构成熟度较低；胶结疏松～中等，胶结类型以接触-孔隙式为主，孔隙式和孔隙-接触式次之，这种岩石结构特征决定了储层微观结构复杂，物性较差。-->
+    </p>
+</div>
+
+<div style="clear:both"></div>
+
+<div style="width:100%; margin:0px;" >
+    <img src="images/figure4.png" style="float:left; width:400px;margin:-5 5 5 5;cursor: pointer" id='img3'/>
+    <p>
+        石南油田各油藏在纵向上分布在清水河组、头屯河组、西山窑组和三工河组，平面上各区块基本没有相互叠置，均为独立的油气藏。石南油田各油气藏除受构造控制外，还受岩性（物性）控制，油藏类型主要为构造岩性油藏。
+    </p>
+</div>
+<div style="clear:both"></div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('#img1').on('click', function () {
+
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/content/images/figure2.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+        $('#img2').on('click', function () {
+
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/content/images/figure3.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+        $('#img3').on('click', function () {
+
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/content/images/figure4.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+    })
+</script>

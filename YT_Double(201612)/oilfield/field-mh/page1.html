@@ -1,0 +1,68 @@
+<html>
+<head>
+
+    <!-- content type -->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+       
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+                
+    <!-- add css -->
+    <link type="text/css" href="../../css/style.css" rel="stylesheet">
+	<!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+    
+    <!-- add js -->
+    <script src="../../js/jquery.js"></script>
+    <!--<script src="../../js/turn.js"></script>              -->
+    <!--<script src="../../js/jquery.fullscreen.js"></script>-->
+    <!--<script src="../../js/jquery.address-1.6.min.js"></script>-->
+	<!--<script src="../../js/onload.js"></script>-->
+    
+
+	<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+		overflow:auto !important;
+    }
+        p{
+            color: #4e4e4e;
+            font-weight: 800;
+        }
+
+    </style> 
+      
+</head>
+ 
+<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">
+<a href="javascript:;"><img src="figure1.png" style="float:right; width:400px;margin:10px" /></a>
+	<h1 style="text-shadow: 5px 5px 5px gray">(一)地理位置</h1>
+	<p style="text-indent: 2em">
+        玛河气田构造位置处于准噶尔盆地南缘冲断带霍玛吐背斜带的玛纳斯背斜，行政区划隶属于石河子市，北距石河子市15km。玛河气田凝析气藏发现于2006年9月，发现井为玛纳1井，出气层位为古近系紫泥泉子组紫三段，目前完钻评价井3口，开发井3口，正钻开发井1口，其中玛纳1、玛纳001井、玛纳003井和MN1001井、MN1002井分获高产商业气流。
+    </p>
+    <p style="text-indent: 2em">
+        玛纳斯背斜位于准噶尔盆地南缘中段的霍玛吐背斜带构造单元上，与吐谷鲁背斜、霍尔果斯背斜一起统称为北天山山前的第二排背斜构造带，构造样式基本一致。背斜形成于喜马拉雅运动末期，受北天山隆升向北挤压力的作用下，沿安集海河组塑性泥岩层形成霍玛吐断裂滑脱冲出地表，滑脱断层之下形成古近系安集海河组(E2-3a)，紫泥泉子组(E1-2z)及白垩系东沟组（K2d）为地层组合的背斜构造。
+    </p>
+<a href="javascript:;"><img src="figure1-1.png" style="float:right; width:400px;margin:10px" /></a>
+	<h1 style="text-shadow: 5px 5px 5px gray">(二)玛河气田古近系紫泥泉子组紫三段含气面积图</h1>
+	<p style="text-indent: 2em">
+        玛河气田三个区块古近系紫泥泉子组紫三段凝析气藏叠合含气面积20.83km2。本次申报探明凝析气藏地质储量为321.71×108m3，天然气地质储量为313.98×108m3，凝析油地质储量为426.63×104t；天然气技术可采储量204.09×108m3，凝析油技术可采储量106.65×104t。
+    </p>
+</body>
+</html>
+<script>
+    $(function(){
+        $('img').on('click', function () {
+            var src = this.src;
+            console.log(src);
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', src);
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+    })
+</script>

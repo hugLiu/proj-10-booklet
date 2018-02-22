@@ -1,0 +1,146 @@
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link type="text/css" href="../../css/style.css" rel="stylesheet">
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+
+    <!-- add js -->
+    <script src="../../js/jquery.js"></script>
+    <!--<script src="../../js/turn.js"></script>              -->
+    <!--<script src="../../js/jquery.fullscreen.js"></script>-->
+    <!--<script src="../../js/jquery.address-1.6.min.js"></script>-->
+    <!--<script src="../../js/onload.js"></script>-->
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: auto !important;
+        }
+
+        p {
+            color: #4e4e4e;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .color1 {
+            color: #767676;
+        }
+
+        .color2 {
+            color: #9d9d9d;
+        }
+
+        .color3 {
+            color: #bfbfbf;
+        }
+
+        .color4 {
+            color: #e4e4e4;
+        }
+        /*.p1-1,.p2-1,.p3-1{*/
+            /*display: none;*/
+        /*}*/
+    </style>
+
+</head>
+
+
+    <a href="javascript:;"><img class="img1" src="images/figure3.png" style="float:left; width:400px;height:450px;margin:5px"/></a>
+<br/>
+    <p class="p1-1">
+        截止2014年底，新疆油田已探明油气田31个，探明石油地质储量24.09亿吨，已开发油田26个，动用石油地质储量16.80亿吨，稀油动用储量13.55亿吨，稠油动用储量3.25亿吨。
+
+    </p>
+
+</div>
+
+
+    <a href="javascript:;"><img class="img2" src="images/figure2.png" style="float:left; width:455px;height:279px;margin:5px"/></a>
+    <p class="p2-1">
+
+    </p>
+    <!--<p class="p2-2">-->
+        <!--百口泉地区地层从基底石炭系开始，向上依次沉积了二叠系佳木河组、夏子街组和下乌尔禾组，三叠系百口泉组、克下组、克上组和白碱滩组，侏罗系八道湾组、三工河组、西山窑组、头屯河组和齐古组，浅层及地表为白垩系和第三系沉积。克－<span-->
+            <!--class="color1">乌断裂下盘地层沉积较全，上盘二叠系及三叠系地层大部分缺失。克－</span><span class="color2">乌断裂下盘沉积厚度达8000m，二叠系近</span><span-->
+            <!--class="color3">5000m，三叠系900m，侏罗系1200m，白垩</span><span class="color4">系以上900m，克－乌断裂上...</span>-->
+    <!--</p>-->
+</div>
+
+<div style="clear:both"></div>
+<!--<span class="color1"></span>-->
+
+    <a href="javascript:;"><img class="img3" src="images/figure4.png" style="float:left; width:558px;margin:5px" /></a>
+    <!--<h3 style="text-shadow: 5px 5px 5px gray">百口泉油田主要由三种油藏类型组成</h3>-->
+<br/><br/>
+    <p class="p3-1">
+        截止2014年底，累计生产原油3.3亿吨，年产油1180万吨，其中稀油年产油679万吨（砾岩油藏年产油279万吨），稠油年产油501万吨。
+
+    </p>
+    <!--<p class="p3-2">-->
+        <!--断裂遮挡的单斜油藏：上倾方向都为克—乌断裂切割遮挡，下倾方向有微弱的边水或岩性所封闭。百口泉组油水边界在-2180m，克下组在-1960m，克上组<span class="color1">在-1940m左右。</span><br/>-->
+        <!--<span class="color2">地层超覆尖灭油藏：主要分布在克—乌断裂上盘三叠</span><span class="color3">系超覆尖灭带，如422井区克上组、百31井区百口泉</span><span class="color4">组等，油藏上倾方向油层超覆尖灭，下倾方向...</span>-->
+    <!--</p>-->
+</div>
+</body>
+</html>
+
+<script>
+    $(function () {
+        $('.img1').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/default/images/figure3.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+        $('.img2').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/default/images/figure2.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+        $('.img3').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/default/images/figure4.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+        $('.p1-2').click(function(){
+            $('.p1-2').css('display','none');
+            $('.p1-1').css('display','block');
+        })
+        $('.p1-1').click(function(){
+            $('.p1-1').css('display','none');
+            $('.p1-2').css('display','block');
+        })
+
+        $('.p2-2').click(function(){
+            $('.p2-2').css('display','none');
+            $('.p2-1').css('display','block');
+        })
+        $('.p2-1').click(function(){
+            $('.p2-1').css('display','none');
+            $('.p2-2').css('display','block');
+        })
+
+        $('.p3-2').click(function(){
+            $('.p3-2').css('display','none');
+            $('.p3-1').css('display','block');
+        })
+        $('.p3-1').click(function(){
+            $('.p3-1').css('display','none');
+            $('.p3-2').css('display','block');
+        })
+
+    })
+</script>

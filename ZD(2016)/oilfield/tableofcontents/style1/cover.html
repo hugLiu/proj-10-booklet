@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- add js -->
+    <script src="../../../js/jquery.js"></script>
+    <style>
+
+        div{
+            text-align: center;
+            margin-top: 15%;
+        }
+        h1{
+            font-size: 40px;
+
+        }
+        select{
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+        }
+        span{
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>新疆油田公司</h1>
+        <h1>2016年原油产能建设跟踪研究及实施指导意见</h1>
+        <br/><br/><br/>
+
+
+
+        <span> 年份：</span>
+        <select name=na id="year_select">
+            <option value="2017">&nbsp;&nbsp;2017年</option>
+            <option value="2016" selected="selected">&nbsp;&nbsp;2016年</option>
+            <option value="2015">&nbsp;&nbsp;2015年</option>
+            <!--<option value="2014">&nbsp;&nbsp;2014年</option>-->
+        </select>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#year_select").change(function (e) {
+                var year = $(this).val();
+
+                var url = "/BookData/ZD(" + year + ")/default.html";
+
+                window.open(url, "_blank");
+            });
+        });
+    </script>
+</body>
+</html>

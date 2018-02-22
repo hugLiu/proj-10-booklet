@@ -1,0 +1,103 @@
+<html>
+<head>
+
+    <!-- content type -->
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+       
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+                
+    <!-- add css -->
+    <link type="text/css" href="../../../css/style.css" rel="stylesheet">
+	<!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+    
+    <!-- add js -->
+    <script src="../../../js/jquery.js"></script>
+    <!--<script src="../../../js/turn.js"></script>              -->
+    <!--<script src="../../../js/jquery.fullscreen.js"></script>-->
+    <!--<script src="../../../js/jquery.address-1.6.min.js"></script>-->
+	<!--<script src="../../../js/onload.js"></script>-->
+    
+
+	<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+		overflow:auto !important;
+    }
+    p{
+        color: #4e4e4e;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    .color1 {
+        color: #767676;
+    }
+
+    .color2 {
+        color: #9d9d9d;
+    }
+
+    .color3 {
+        color: #bfbfbf;
+    }
+
+    .color4 {
+        color: #e4e4e4;
+    }
+    .p2-1{
+        display: none;
+    }
+    </style> 
+      
+</head>
+ 
+<!--<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">-->
+    <div style="float:left; width:99%; float:right; margin:5px;" >
+        <a href="javascript:;"><img src="figure5.png" style="float:left; width:320px;margin:0 35 0 10" class="img1" /></a>
+    <h3 style="text-shadow: 5px 5px 5px gray">百口泉油田百21井区百口泉组沉积相图</h3>
+	<p style="text-indent: 2em">
+        1974年百21井区百口泉组油藏投入开发，动用含油面积23.6km2，地质储量3777×104t，采用500m井距反九点法一套井网，后调整为385～500m井距反九点法B1、B2+3一套半井网。百21井区百口泉组目前共投产采油井105口，开井87口，注水井49口，开井45口。
+    </p>
+    </div>
+	
+    <div style="float:right; width:99%; margin:0px;" >
+        <a href="javascript:;"><img src="figure6.png" style="float:right; width:340px;margin:-165 5 5 5" class="img2"/></a>
+	<p class="p2-1" style="text-indent: 2em">
+        工区百口泉组（T1b）自上而下T1b1砂层组、T1b2砂层组缺失，油层发育在T1b3砂层组。岩性主要为灰绿色、灰色、褐色中砾岩、砂砾岩及含砾泥岩互层，总体是一个下粗上细的正旋回组合。沉积相为冲积扇扇顶（扇根）亚相沉积，水流方向来自西北方向。有利储层的沉积微相主要为主槽、侧缘槽，沉积微相平面分布规律为：在工区北侧发育主槽微相，在工区南侧一带发育另一主槽微相。T1b3砂层组主要的砂体成因类型为河道充填沉积和筛状沉积，局部见泥石流堆积。晚期随着湖侵退积作用的增强，物源供应不充分。T1b3砂层顶部沉积一套灰褐色泥岩，作为盖层对油藏起封堵作用。
+    </p>
+        <p class="p2-2" style="text-indent: 2em">
+            工区百口泉组（T1b）自上而下T1b1砂层组、T1b2砂层组缺失，油层发育在T1b3砂层组。岩性主要为灰绿色、灰色、褐色中砾岩、砂砾岩及含砾泥岩互层，<span class="color1">总体是一个下粗上细的正旋回组合。沉积相为冲积扇扇顶（扇根）</span><span class="color2">亚相沉积，水流方向来自西北方向。</span><span class="color3">有利储层的沉积微相主要为</span><span class="color4">主槽、侧缘槽，沉积...</span>
+        </p>
+    </div>
+    <div style="clear:both"></div>
+</body>
+</html>
+<script>
+    $(function(){
+        $('.img1').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/reservoir/item13/figure5.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+        $('.img2').on('click', function () {
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/reservoir/item13/figure6.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+        $('.p2-2').click(function(){
+            $('.p2-2').css('display','none');
+            $('.p2-1').css('display','block');
+        })
+        $('.p2-1').click(function(){
+            $('.p2-1').css('display','none');
+            $('.p2-2').css('display','block');
+        })
+    })
+</script>

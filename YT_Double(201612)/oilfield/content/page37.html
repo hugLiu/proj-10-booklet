@@ -1,0 +1,75 @@
+<html>
+<head>
+
+    <!-- content type -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <!-- viewport -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- title -->
+    <title>新疆油田规划图形库二期 - 开发图册</title>
+
+    <!-- add css -->
+    <link type="text/css" href="../../../css/style.css" rel="stylesheet">
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Play:400,700"> -->
+    <!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nunito:400,300"> -->
+
+    <!-- add js -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../../js/turn.js"></script>
+    <script src="../../../js/jquery.fullscreen.js"></script>
+    <script src="../../../js/jquery.address-1.6.min.js"></script>
+    <script src="../../../js/onload.js"></script>
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow:auto !important;
+        }
+    </style>
+
+</head>
+
+<!--<body class="content-body" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="return false" onbeforecopy="return false" onmouseup="return false">-->
+<div style="width:49%; float:left; margin:5px; text-align:center" >
+    <h3>相渗曲线</h3>
+    <img src="images/figure9.png" style="width:400px;margin:5px;cursor: pointer" id='img1'/>
+    <p>截止2016年12月底，石南油田共有采油井623口，开井581口，注水井164口，开井164口。年产原油144.21×104t，年产溶解气2.23×108m3。累计生产原油396.56×104t，累计生产溶解气5.90×108m3。原油可采储量采出程度19.85%，溶解气可采储量采出程度21.32%。累积试采天然气0.05×108m3，累积试采凝析油0.01×104t。
+    </p>
+</div>
+
+<div style="width:49%; float:left; margin:0px;" >
+    <h3>毛管压力曲线</h3>
+    <p>
+        石南21井区头屯河组油藏标定采收率34%；② 低含水阶段含水上升率1.23在20%≤含水率<60%的中含水阶段含水上升率3.70%，在高含水期（60%≤fw<90%）阶段含水上升率为3.52%；③ 现阶段开发效果较好，预测最终采收率45%左右。
+    </p>
+    <img src="images/figure10.png" style="width:420px;margin:5 5 5 5;cursor: pointer" id='img2'/>
+</div>
+<div style="clear:both"></div>
+</body>
+</html>
+
+
+<script>
+    $(function(){
+        $('#img1').on('click', function () {
+
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/content/images/figure9.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+        $('#img2').on('click', function () {
+
+            $(window.parent.document).find('.hidden-Bigimg img').attr('src', 'oilfield/content/images/figure10.png');
+            $(window.parent.document).find('.hidden-Bigimg').show(200)
+
+        })
+
+
+
+    })
+</script>
